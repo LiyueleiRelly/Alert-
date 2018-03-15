@@ -1,0 +1,74 @@
+/*alert-box start*/
+.alert-box-background {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: alpha(Opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    background-color: #000;
+}
+.alert-box {
+    /*z-index: 101;*/
+    position: absolute;
+    width: 350px;
+    z-index: 10000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 10px 10px;
+    background-color: #ff0;
+    filter: alpha(Opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+    border-radius: 5px;
+    -webkit-box-shadow:  2px 2px 5px #ff2;
+    -moz-box-shadow:  2px 2px 5px #ff2;
+    box-shadow: 2px 2px 5px #ff2;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+@media all and (max-width:400px ){
+    .alert-box {
+        width: 300px;
+    }
+}
+.alert-box-content > p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.alert-box-icon {
+    padding: 20px 0;
+}
+.alert-box-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.alert-box-info {
+    font-size: 18px;
+}
+.alert-box-btn {
+    padding: 20px 0;
+}
+.alert-box-btn > button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 10px 50px;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+}
+.alert-box-btn > button:hover {
+    background-color: #d2d2d2;
+}
+
+
+/*alert-box end*/
